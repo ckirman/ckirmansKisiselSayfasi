@@ -26,9 +26,8 @@
     <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
 </head><!--/head-->
 
-<body>
-	<header id="header"><!--header-->
-		<div class="header_top"><!--header_top-->
+<body >
+<div class="header_top"><!--header_top-->
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-6">
@@ -51,24 +50,32 @@
 				</div>
 			</div>
 		</div><!--/header_top-->
-		
-		<div class="header-middle"><!--header-middle-->
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-4">
-						<div class="logo pull-left">
-							<a href="index.php"><img src="images/Screenshot_5.png" alt="" width="80px" height="80px" class="img-circle"/></a>
-						</div>
-						<div class="btn-group pull-right">
-							<div class="btn-group">
-							</div>
-							<div class="btn-group">
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-8">
+<div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+	
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse mainmenu" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav collapse navbar-collapse">
+                            	<li><a href="index.php" class="active">Hakkımda</a></li>
+								<li><a href="ozgecmis.php">Özgeçmiş</a></li>
+								<li><a href="sehrim.php">Şehrim</a></li>
+								<li><a href="mirasimiz.php">Mirasımız</a></li>
+								<li><a href="ilgiAlanlarim.php">İlgi Alanlarım</a></li>
+								<li><a href="iletisim.php">İletişim</a></li>
+							</ul>
+     
+      				
 						<div class="shop-menu pull-right">
-							<ul class="nav navbar-nav">
+							<ul class="nav navbar-nav navbar-right">
 								<?php
 								$link = mysqli_connect("localhost", "root")or die("Mysql Bağlantısı kurulamadı.");
 								mysqli_select_db($link,"proje") or die("Veritabanına bağlanılamadı.");
@@ -107,40 +114,11 @@
 								
 							</ul>
 						</div>
-					</div>
-				</div>
-			</div>
-		</div><!--/header-middle-->
+      		</ul>
+    	</div><!-- /.navbar-collapse -->
+  </div><!-- /.container -->
 	
-		<div class="header-bottom"><!--header-bottom-->
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-9">
-						<div class="navbar-header">
-							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-								<span class="sr-only"></span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-							</button>
-						</div>
-						<div class="mainmenu pull-left">
-							<ul class="nav navbar-nav collapse navbar-collapse">
-								<li><a href="index.php" class="active">Hakkımda</a></li>
-								<li><a href="ozgecmis.php">Özgeçmiş</a></li>
-								<li><a href="sehrim.php">Şehrim</a></li>
-								<li><a href="mirasimiz.php">Mirasımız</a></li>
-								<li><a href="ilgiAlanlarim.php">İlgi Alanlarım</a></li>
-								<li><a href="iletisim.php">İletişim</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div><!--/header-bottom-->
-	</header><!--/header-->
-	
-	<section id="slider"><!--slider-->
+  <section id="slider"><!--slider-->
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-12">
@@ -203,21 +181,6 @@
 		</div>
 	</section><!--/slider-->
 	
-	<section>
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-9 col-sm-offset-1">
-					<div class="blog-post-area">
-						<h2 class="title text-center"> EN SON HABERLER</h2>
-						
-								
-					
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	
 	<footer id="footer"><!--Footer-->
 		<div class="footer-top">
 			<div class="container">
@@ -226,13 +189,6 @@
 						<div class="companyinfo">
 							<h2><span>Cihat Kırman'ın Kişisel Sayfası</h2>
 							
-						</div>
-					</div>
-
-					<div class="col-sm-3">
-						<div class="address">
-							<img src="images/map.png" alt="" />
-							<p>Sakarya Üniversitesi Bilgisayar ve Bilişim Bilimleri Fakültesi, 54187 Sakarya</p>
 						</div>
 					</div>
 				</div>
@@ -256,3 +212,4 @@
     <script src="js/main.js"></script>
 </body>
 </html>
+

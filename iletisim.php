@@ -28,14 +28,14 @@
 
 <body>
 	<header id="header"><!--header-->
-		<div class="header_top"><!--header_top-->
+	<div class="header_top"><!--header_top-->
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-6">
 						<div class="contactinfo">
 							<ul class="nav nav-pills">
 								<li><a href="#"><i class="fa fa-phone"></i> +90 (264) 295 69 79 </a></li>
-								<li><a href="#"><i class="fa fa-envelope"></i> bf@sakarya.edu.tr</a></li>
+								<li><a href="#"><i class="fa fa-envelope"></i> bbf@sakarya.edu.tr</a></li>
 							</ul>
 						</div>
 					</div>
@@ -51,57 +51,73 @@
 				</div>
 			</div>
 		</div><!--/header_top-->
-		
-		<div class="header-middle"><!--header-middle-->
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-4">
-						<div class="logo pull-left">
-                        <a href="index.php"><img src="images/Screenshot_5.png" alt="" width="80px" height="80px" class="img-circle"/></a>
-						</div>
-						<div class="btn-group pull-right">
-							<div class="btn-group">
-							</div>
-							<div class="btn-group">
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-8">
-						<div class="shop-menu pull-right">
-							<ul class="nav navbar-nav">
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div><!--/header-middle-->
+<div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
 	
-		<div class="header-bottom"><!--header-bottom-->
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-9">
-						<div class="navbar-header">
-							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-								<span class="sr-only"></span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-							</button>
-						</div>
-						<div class="mainmenu pull-left">
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse mainmenu" id="bs-example-navbar-collapse-1">
 							<ul class="nav navbar-nav collapse navbar-collapse">
-                            <li><a href="index.php" class="active">Hakkımda</a></li>
+                            	<li><a href="index.php" class="active">Hakkımda</a></li>
 								<li><a href="ozgecmis.php">Özgeçmiş</a></li>
 								<li><a href="sehrim.php">Şehrim</a></li>
 								<li><a href="mirasimiz.php">Mirasımız</a></li>
 								<li><a href="ilgiAlanlarim.php">İlgi Alanlarım</a></li>
 								<li><a href="iletisim.php">İletişim</a></li>
 							</ul>
+     
+      				
+						<div class="shop-menu pull-right">
+							<ul class="nav navbar-nav navbar-right">
+								<?php
+								$link = mysqli_connect("localhost", "root")or die("Mysql Bağlantısı kurulamadı.");
+								mysqli_select_db($link,"proje") or die("Veritabanına bağlanılamadı.");
+									if(isset($_COOKIE["SID"])){
+										$sid = $_COOKIE["SID"];
+										$sql = mysqli_query($link ,"SELECT * FROM uye WHERE session='$sid'");
+										
+										while($a = mysqli_fetch_array($sql)){
+											if($a){
+												echo '<li><a href="hesabim.php">'.$a["ad"].'</a></li>';
+												echo '<li><a href="cikis.php"><i class="fa fa-lock"></i> Çıkış</a></li>';
+											}else{
+												setcookie("SID", "", time()-3600);
+												echo '<script>window.location="index.php";</script>';
+											}
+										}
+										
+									}else if(isset($_COOKIE["ASID"])){
+										$sid = $_COOKIE["ASID"];
+										$sql = mysqli_query($link ,"SELECT * FROM uye WHERE session='$sid'");
+										
+										while($a = mysqli_fetch_array($sql)){
+											if($a){
+												echo '<li><a href="admin.php">'.$a["ad"].'</a></li>';
+												echo '<li><a href="cikis.php"><i class="fa fa-lock"></i> Çıkış</a></li>';
+											}else{
+												setcookie("ASID", "", time()-3600);
+												echo '<script>window.location="index.php";</script>';
+											}
+										}
+									}else{
+										echo '<li><a href="login.php"><i class="fa fa-lock"></i> Giriş Yap/Üye Ol</a></li>';
+									}
+								
+								?>
+								
+							</ul>
 						</div>
-					</div>
-				</div>
-			</div>
-		</div><!--/header-bottom-->
+      		</ul>
+    	</div><!-- /.navbar-collapse -->
+  </div><!-- /.container -->
 	</header><!--/header-->
 	 
 	 <div id="contact-page" class="container">
@@ -166,12 +182,13 @@
     	</div>	
     </div><!--/#contact-page-->
 	
-<footer id="footer"><!--Footer-->
+	<footer id="footer"><!--Footer-->
 		<div class="footer-top">
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-9">
 						<div class="companyinfo">
+							<h2><span>Cihat Kırman'ın Kişisel Sayfası</h2>
 							
 						</div>
 					</div>
