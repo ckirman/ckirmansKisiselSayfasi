@@ -86,7 +86,7 @@
 										
 										while($a = mysqli_fetch_array($sql)){
 											if($a){
-												echo '<li><a href="hesabim.php">'.$a["ad"].'</a></li>';
+												echo '<li><a href="index.php">'.$a["ad"].'</a></li>';
 												echo '<li><a href="cikis.php"><i class="fa fa-lock"></i> Çıkış</a></li>';
 											}else{
 												setcookie("SID", "", time()-3600);
