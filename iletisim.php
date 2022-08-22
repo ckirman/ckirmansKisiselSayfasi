@@ -148,36 +148,7 @@
 				        </form>
 	    			</div>
 	    		</div>
-	    		<div class="col-sm-4">
-	    			<div class="contact-info">
-	    				<h2 class="title text-center">İLETİŞİM BİLGİLERİ</h2>
-	    				<address>
-	    				
-							<p>Bilgisayar ve Bilişim Bilimleri Fakültesi Haşim Gürdamar Binası 54187</p>
-							<p>Serdivan / SAKARYA</p>
-							<p>Tel: +90 (264) 295 69 79</p>
-							<p>Fax: +90 (264) 295 69 78 </p>
-							<p>Email: bf@sakarya.edu.tr</p>
-	    				</address>
-	    				<div class="social-networks">
-	    					<h2 class="title text-center">SOSYAL AĞLARIMIZ</h2>
-							<ul>
-								<li>
-									<a href="#"><i class="fa fa-facebook"></i></a>
-								</li>
-								<li>
-									<a href="#"><i class="fa fa-twitter"></i></a>
-								</li>
-								<li>
-									<a href="#"><i class="fa fa-google-plus"></i></a>
-								</li>
-								<li>
-									<a href="#"><i class="fa fa-youtube"></i></a>
-								</li>
-							</ul>
-	    				</div>
-	    			</div>
-    			</div>    			
+	    		  			
 	    	</div>  
     	</div>	
     </div><!--/#contact-page-->
