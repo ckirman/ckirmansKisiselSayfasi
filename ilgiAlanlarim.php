@@ -33,8 +33,8 @@
 					<div class="col-sm-6">
 						<div class="contactinfo">
 							<ul class="nav nav-pills">
-								<li><a href="#"><i class="fa fa-phone"></i> +90 (264) 295 69 79 </a></li>
-								<li><a href="#"><i class="fa fa-envelope"></i> bbf@sakarya.edu.tr</a></li>
+							<li><a href="#"><i class="fa fa-phone"></i> +90 (545) 768 96 43 </a></li>
+								<li><a href="#"><i class="fa fa-envelope"></i> cihat.kirman@ogr.sakarya.edu.tr</a></li>
 							</ul>
 						</div>
 					</div>
@@ -121,7 +121,7 @@
 
 	
 	
-	<footer id="footer"><!--Footer-->
+  <footer id="footer"><!--Footer-->
 		<div class="footer-top">
 			<div class="container">
 				<div class="row">
@@ -129,13 +129,6 @@
 						<div class="companyinfo">
 							<h2><span>Cihat Kırman'ın Kişisel Sayfası</h2>
 							
-						</div>
-					</div>
-
-					<div class="col-sm-3">
-						<div class="address">
-							<img src="images/map.png" alt="" />
-							<p>Sakarya Üniversitesi Bilgisayar ve Bilişim Bilimleri Fakültesi, 54187 Sakarya</p>
 						</div>
 					</div>
 				</div>

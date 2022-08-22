@@ -33,8 +33,8 @@
 					<div class="col-sm-6">
 						<div class="contactinfo">
 							<ul class="nav nav-pills">
-								<li><a href="#"><i class="fa fa-phone"></i> +90 (264) 295 69 79 </a></li>
-								<li><a href="#"><i class="fa fa-envelope"></i> bbf@sakarya.edu.tr</a></li>
+								<li><a href="#"><i class="fa fa-phone"></i> +90 (545) 768 96 43 </a></li>
+								<li><a href="#"><i class="fa fa-envelope"></i> cihat.kirman@ogr.sakarya.edu.tr</a></li>
 							</ul>
 						</div>
 					</div>
@@ -85,7 +85,7 @@
 										
 										while($a = mysqli_fetch_array($sql)){
 											if($a){
-												echo '<li><a href="hesabim.php">'.$a["ad"].'</a></li>';
+												echo '<li><a href="index.php">'.$a["ad"].'</a></li>';
 												echo '<li><a href="cikis.php"><i class="fa fa-lock"></i> Çıkış</a></li>';
 											}else{
 												setcookie("SID", "", time()-3600);
@@ -131,41 +131,32 @@
 						</ol>
 						
 						<div class="carousel-inner">
-								<?php
-									$s = mysqli_query($link ,"SELECT * FROM slider LIMIT 1");
+							
+							<div class="item active">
 								
-									if($slider = mysqli_fetch_array($s)){
-										
-										echo '<div class="item active">';
-										echo '<div class="col-sm-6">';
-										echo '<h1><span>'.$slider["baslik"].'</span></h1>';
-										echo '<h2>'.$slider["ikinci"].'</h2>';
-										echo '<p>'.$slider["detay"].'</p>';
-										echo '<a href="haber.php?id='.$slider["haber_id"].'" class="btn btn-default get">Şimdi oku</a></a>';
-										echo '</div>';
-										echo '<div class="col-sm-6">';
-										echo '<img src="images/'.$slider["foto"].'" class="girl img-responsive" alt="" />';
-										echo '</div>';
-										echo '</div>';
-									}
-									
-									$sql = mysqli_query($link ,"SELECT * FROM slider LIMIT 1,3");
-									
-									while($slider = mysqli_fetch_array($sql)){
-										echo '<div class="item">';
-										echo '<div class="col-sm-6">';
-										echo '<h1><span>'.$slider["baslik"].'</span></h1>';
-										echo '<h2>'.$slider["ikinci"].'</h2>';
-										echo '<p>'.$slider["detay"].'</p>';
-										echo '<a href="haber.php?id='.$slider["haber_id"].'" class="btn btn-default get">Şimdi oku</a>';
-										echo '</div>';
-										echo '<div class="col-sm-6">';
-										echo '<img src="images/'.$slider["foto"].'" class="girl img-responsive" alt="" />';
-										echo '</div>';
-										echo '</div>';
-									}
-
-								?>							
+								<div class="col-sm-6">';
+									<img src="images/slider/niksar.png" class="girl fill" alt="" />
+								</div>
+							</div>
+							<div class="item">
+								
+								<div class="col-sm-6">';
+									<img src="images/slider/csgo-esportimes.png" class="girl fill" alt="" />
+								</div>
+							</div>
+							<div class="item ">
+								
+								<div class="col-sm-6">';
+									<img src="images/slider/kapak_124603.png" class="girl fill" alt="" />
+								</div>
+							</div>
+							<div class="item ">
+								
+								<div class="col-sm-6">';
+									<img src="images/slider/1376128.png" class="girl fill " alt="" />
+								</div>
+							</div>
+						
 						</div>
 						
 						<a href="#slider-carousel" class="left control-carousel hidden-xs" data-slide="prev">
@@ -180,7 +171,18 @@
 			</div>
 		</div>
 	</section><!--/slider-->
-	
+	<div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4 giris">
+                <i class="fas fa-dice-d20"></i>
+                <p>Merhaba, ben Cihat Kırman. Sakarya Üniversitesi Bilgisayar Mühendisliği dördüncü sınıf öğrencisiyim.
+                Bu blog Web Teknolojileri dersi projesi için hazırlanmıştır. Giriş sayfası olan Hakkımda sayfasında
+                hobilerim ve sevdiğim aktiviteler hakkında kısa bilgilere, CV sayfasında eğitim bilgilerime, Şehrim sayfasında
+                yaşadığım şehir hakkında bilgilere ulaşabilirsiniz.</p>
+                   
+            </div>
+            <div class="col-md-4"></div>
+        </div>
 	<footer id="footer"><!--Footer-->
 		<div class="footer-top">
 			<div class="container">

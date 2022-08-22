@@ -34,8 +34,8 @@
 					<div class="col-sm-6">
 						<div class="contactinfo">
 							<ul class="nav nav-pills">
-								<li><a href="#"><i class="fa fa-phone"></i> +90 (264) 295 69 79 </a></li>
-								<li><a href="#"><i class="fa fa-envelope"></i> bbf@sakarya.edu.tr</a></li>
+							<li><a href="#"><i class="fa fa-phone"></i> +90 (545) 768 96 43 </a></li>
+								<li><a href="#"><i class="fa fa-envelope"></i> cihat.kirman@ogr.sakarya.edu.tr</a></li>
 							</ul>
 						</div>
 					</div>
@@ -129,7 +129,7 @@
 	    			<div class="contact-form">
 	    				<h2 class="title text-center">İLETİŞİMDE KALIN</h2>
 	    				<div class="status alert alert-success" style="display: none"></div>
-				    	<form id="iletisim" action="php/mail.php" class="contact-form row" name="iletisim" onsubmit="return check_iletisim()" method="post">
+				    	<form id="iletisim" action="mail.php" class="contact-form row" name="iletisim" onsubmit="return check_iletisim()" method="post">
 				            <div class="form-group col-md-6">
 				                <input type="text" name="ad" class="form-control" required="required" placeholder="İsim">
 				            </div>
@@ -161,13 +161,6 @@
 						<div class="companyinfo">
 							<h2><span>Cihat Kırman'ın Kişisel Sayfası</h2>
 							
-						</div>
-					</div>
-
-					<div class="col-sm-3">
-						<div class="address">
-							<img src="images/map.png" alt="" />
-							<p>Sakarya Üniversitesi Bilgisayar ve Bilişim Bilimleri Fakültesi, 54187 Sakarya</p>
 						</div>
 					</div>
 				</div>
