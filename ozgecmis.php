@@ -118,9 +118,10 @@
     	</div><!-- /.navbar-collapse -->
   </div><!-- /.container -->
 	
-			<div class="container">
-						<iframe src="" frameborder="0"></iframe>
-			</div>						
+			<div width="%100" height="%100">
+			<iframe src= "documents/CihatKirman.pdf" width="750" height="1000"></iframe>
+			</div>
+							
 	
   <footer id="footer"><!--Footer-->
 		<div class="footer-top">

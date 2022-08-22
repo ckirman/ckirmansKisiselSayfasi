@@ -134,25 +134,25 @@
 							
 							<div class="item active">
 								
-								<div class="col-sm-6">';
+								<div class="col-sm-6">
 									<img src="images/slider/niksar.png" class="girl fill" alt="" />
 								</div>
 							</div>
 							<div class="item">
 								
-								<div class="col-sm-6">';
+								<div class="col-sm-6">
 									<img src="images/slider/csgo-esportimes.png" class="girl fill" alt="" />
 								</div>
 							</div>
 							<div class="item ">
 								
-								<div class="col-sm-6">';
+								<div class="col-sm-6">
 									<img src="images/slider/kapak_124603.png" class="girl fill" alt="" />
 								</div>
 							</div>
 							<div class="item ">
 								
-								<div class="col-sm-6">';
+								<div class="col-sm-6">
 									<img src="images/slider/1376128.png" class="girl fill " alt="" />
 								</div>
 							</div>
